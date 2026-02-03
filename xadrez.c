@@ -6,14 +6,14 @@ int main() {
 
     // Torre - for; Bispo - While; Rainha - do-while
 
-    // Torre
+    // Torre - for
     printf("--- Movimento da Torre ---\n");
 
     for (int contador_torre = 0; contador_torre < 5; contador_torre++ ) {
         printf ("Direita\n");
     }
 
-    // Bispo
+    // Bispo - while
     printf("--- Movimento da Bispo ---\n");
 
     int contador_bispo = 0;
@@ -23,7 +23,7 @@ int main() {
         contador_bispo++ ;
     }
 
-    // Rainha
+    // Rainha - do-while
     printf("--- Movimento da Rainha ---\n");
 
     int contador_rainha = 0 ;
@@ -33,8 +33,34 @@ int main() {
         contador_rainha++;
     } while (contador_rainha < 8);
 
+
     
     // FIM DO PROGRAMA - TEMA 4 - NIVEL NOVATO //
+
+
+
+    // INICIO DO PROGRAMA - TEMA 4 - NIVEL NOVATO //
+
+    // Cavalo - for com loops aninhados 
+    printf("--- Movimento do Cavalo ---\n");
+
+    int l_cavalo = 0 ;
+
+    for (int contador_cavalo = 0; contador_cavalo < 2; contador_cavalo++) {
+        printf("Baixo\n");
+        if (contador_cavalo == 1 ) {
+            while (l_cavalo < 1) {
+               printf("Esquerda\n");
+               l_cavalo++;
+        }
+    }
+}
+    
+
+
+    // FIM DO PROGRAMA - TEMA 4 - NIVEL NOVATO //
+
+
 
     return 0;
 }
